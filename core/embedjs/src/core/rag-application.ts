@@ -14,8 +14,8 @@ import {
     SIMPLE_MODELS,
     DEFAULT_INSERT_BATCH_SIZE,
     BaseEmbeddings,
-} from '@llm-tools/embedjs-interfaces';
-import { cleanString, getUnique } from '@llm-tools/embedjs-utils';
+} from '@cherrystudio/embedjs-interfaces';
+import { cleanString, getUnique } from '@cherrystudio/embedjs-utils';
 
 export class RAGApplication {
     private readonly debug = createDebugMessages('embedjs:core');
@@ -99,8 +99,8 @@ export class RAGApplication {
         if (typeof model === 'object') return model;
         else if (model === null) return null;
         else {
-            const { OpenAi } = await import('@llm-tools/embedjs-openai').catch(() => {
-                throw new Error('Package `@llm-tools/embedjs-openai` needs to be installed to use OpenAI models');
+            const { OpenAi } = await import('@cherrystudio/embedjs-openai').catch(() => {
+                throw new Error('Package `@cherrystudio/embedjs-openai` needs to be installed to use OpenAI models');
             });
             this.debug('Dynamically imported OpenAi');
 

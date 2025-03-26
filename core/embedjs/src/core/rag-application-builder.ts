@@ -5,7 +5,7 @@ import {
     BaseLoader,
     BaseModel,
     SIMPLE_MODELS,
-} from '@llm-tools/embedjs-interfaces';
+} from '@cherrystudio/embedjs-interfaces';
 import { MemoryStore } from '../store/memory-store.js';
 import { RAGApplication } from './rag-application.js';
 

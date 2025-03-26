@@ -1,9 +1,9 @@
 {
-    "name": "@llm-tools/embedjs-utils",
-    "version": "0.1.28",
+    "name": "@cherrystudio/embedjs-utils",
+    "version": "0.1.29",
     "description": "Useful util functions when extending the embedjs ecosystem",
     "dependencies": {
-        "@llm-tools/embedjs-interfaces": "0.1.28"
+        "@cherrystudio/embedjs-interfaces": "0.1.29"
     },
     "type": "module",
     "main": "./src/index.js",
@@ -28,11 +28,11 @@
     ],
     "author": "K V Adhityan",
     "bugs": {
-        "url": "https://github.com/llm-tools/embedjs/issues"
+        "url": "https://github.com/CherryHQ/embed-js/issues"
     },
-    "homepage": "https://github.com/llm-tools/embedjs#readme",
+    "homepage": "https://github.com/CherryHQ/embed-js#readme",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/llm-tools/embedjs.git"
+        "url": "git+https://github.com/CherryHQ/embed-js.git"
     }
 }

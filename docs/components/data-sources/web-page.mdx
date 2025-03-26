@@ -7,16 +7,16 @@ To add any web page, use the data_type as `WebLoader`.
 ## Install Web addon
 
 ```bash
-npm install @llm-tools/embedjs-loader-web
+npm install @cherrystudio/embedjs-loader-web
 ```
 
 ## Usage
 
 ```ts
-import { RAGApplicationBuilder } from '@llm-tools/embedjs';
-import { OpenAiEmbeddings } from '@llm-tools/embedjs-openai';
-import { HNSWDb } from '@llm-tools/embedjs-hnswlib';
-import { WebLoader } from '@llm-tools/embedjs-loader-web';
+import { RAGApplicationBuilder } from '@cherrystudio/embedjs';
+import { OpenAiEmbeddings } from '@cherrystudio/embedjs-openai';
+import { HNSWDb } from '@cherrystudio/embedjs-hnswlib';
+import { WebLoader } from '@cherrystudio/embedjs-loader-web';
 
 const app = await new RAGApplicationBuilder()
 .setModel(SIMPLE_MODELS.OPENAI_GPT4_O)

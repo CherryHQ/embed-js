@@ -19,14 +19,14 @@ AZURE_OPENAI_API_KEY=<YOUR_KEY>
 ## Install OpenAI addon
 
 ```bash
-npm install @llm-tools/embedjs-openai
+npm install @cherrystudio/embedjs-openai
 ```
 
 ## Usage
 
 ```ts
-import { RAGApplicationBuilder } from '@llm-tools/embedjs';
-import { AzureOpenAi } from '@llm-tools/embedjs-openai';
+import { RAGApplicationBuilder } from '@cherrystudio/embedjs';
+import { AzureOpenAi } from '@cherrystudio/embedjs-openai';
 
 const app = await new RAGApplicationBuilder()
 .setModel(new AzureOpenAi({ model: "gpt-4o" }))
@@ -40,7 +40,7 @@ import {
   DefaultAzureCredential,
   getBearerTokenProvider,
 } from "@azure/identity";
-import { AzureOpenAi } from '@llm-tools/embedjs-openai';
+import { AzureOpenAi } from '@cherrystudio/embedjs-openai';
 
 const credentials = new DefaultAzureCredential();
 const azureADTokenProvider = getBearerTokenProvider(

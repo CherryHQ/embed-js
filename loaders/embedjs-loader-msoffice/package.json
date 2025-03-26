@@ -1,11 +1,11 @@
 {
-    "name": "@llm-tools/embedjs-loader-msoffice",
-    "version": "0.1.28",
+    "name": "@cherrystudio/embedjs-loader-msoffice",
+    "version": "0.1.29",
     "description": "Word, PPT and Excel loader for embedjs",
     "dependencies": {
+        "@cherrystudio/embedjs-interfaces": "0.1.29",
+        "@cherrystudio/embedjs-utils": "0.1.29",
         "@langchain/textsplitters": "^0.1.0",
-        "@llm-tools/embedjs-interfaces": "0.1.28",
-        "@llm-tools/embedjs-utils": "0.1.28",
         "md5": "^2.3.0",
         "office-text-extractor": "^3.0.3"
     },
@@ -31,11 +31,11 @@
     ],
     "author": "K V Adhityan",
     "bugs": {
-        "url": "https://github.com/llm-tools/embedjs/issues"
+        "url": "https://github.com/CherryHQ/embed-js/issues"
     },
-    "homepage": "https://github.com/llm-tools/embedjs#readme",
+    "homepage": "https://github.com/CherryHQ/embed-js#readme",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/llm-tools/embedjs.git"
+        "url": "git+https://github.com/CherryHQ/embed-js.git"
     }
 }

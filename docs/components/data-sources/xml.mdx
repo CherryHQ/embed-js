@@ -8,7 +8,7 @@ Headers are included for each line, so if you have an `age` column, `18` will be
 ## Install XML addon
 
 ```bash
-npm install @llm-tools/embedjs-loader-xml
+npm install @cherrystudio/embedjs-loader-xml
 ```
 
 ## Usage
@@ -16,10 +16,10 @@ npm install @llm-tools/embedjs-loader-xml
 ### Load from a local file
 
 ```ts
-import { RAGApplicationBuilder } from '@llm-tools/embedjs';
-import { OpenAiEmbeddings } from '@llm-tools/embedjs-openai';
-import { HNSWDb } from '@llm-tools/embedjs-hnswlib';
-import { XmlLoader } from '@llm-tools/embedjs-loader-csv';
+import { RAGApplicationBuilder } from '@cherrystudio/embedjs';
+import { OpenAiEmbeddings } from '@cherrystudio/embedjs-openai';
+import { HNSWDb } from '@cherrystudio/embedjs-hnswlib';
+import { XmlLoader } from '@cherrystudio/embedjs-loader-csv';
 
 const app = await new RAGApplicationBuilder()
 .setModel(SIMPLE_MODELS.OPENAI_GPT4_O)
@@ -33,10 +33,10 @@ app.addLoader(new XmlLoader({ filePathOrUrl: '/path/to/file.xml' }))
 ### Load from URL
 
 ```ts
-import { RAGApplicationBuilder } from '@llm-tools/embedjs';
-import { OpenAiEmbeddings } from '@llm-tools/embedjs-openai';
-import { HNSWDb } from '@llm-tools/embedjs-hnswlib';
-import { XmlLoader } from '@llm-tools/embedjs-loader-csv';
+import { RAGApplicationBuilder } from '@cherrystudio/embedjs';
+import { OpenAiEmbeddings } from '@cherrystudio/embedjs-openai';
+import { HNSWDb } from '@cherrystudio/embedjs-hnswlib';
+import { XmlLoader } from '@cherrystudio/embedjs-loader-csv';
 
 const app = await new RAGApplicationBuilder()
 .setModel(SIMPLE_MODELS.OPENAI_GPT4_O)

@@ -1,8 +1,8 @@
 import { RecursiveCharacterTextSplitter } from '@langchain/textsplitters';
 import { getTextExtractor } from 'office-text-extractor';
 import md5 from 'md5';
-import { BaseLoader } from '@llm-tools/embedjs-interfaces';
-import { isValidURL, cleanString } from '@llm-tools/embedjs-utils';
+import { BaseLoader } from '@cherrystudio/embedjs-interfaces';
+import { isValidURL, cleanString } from '@cherrystudio/embedjs-utils';
 
 export class DocxLoader extends BaseLoader<{ type: 'DocxLoader' }> {
     private readonly filePathOrUrl: string;

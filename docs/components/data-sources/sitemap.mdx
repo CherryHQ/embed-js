@@ -7,16 +7,16 @@ Add all web pages from an xml-sitemap use the `SitemapLoader`.
 ## Install Sitemap addon
 
 ```bash
-npm install @llm-tools/embedjs-loader-sitemap
+npm install @cherrystudio/embedjs-loader-sitemap
 ```
 
 ## Usage
 
 ```ts
-import { RAGApplicationBuilder } from '@llm-tools/embedjs';
-import { OpenAiEmbeddings } from '@llm-tools/embedjs-openai';
-import { HNSWDb } from '@llm-tools/embedjs-hnswlib';
-import { SitemapLoader } from '@llm-tools/embedjs-loader-sitemap';
+import { RAGApplicationBuilder } from '@cherrystudio/embedjs';
+import { OpenAiEmbeddings } from '@cherrystudio/embedjs-openai';
+import { HNSWDb } from '@cherrystudio/embedjs-hnswlib';
+import { SitemapLoader } from '@cherrystudio/embedjs-loader-sitemap';
 
 const app = await new RAGApplicationBuilder()
 .setModel(SIMPLE_MODELS.OPENAI_GPT4_O)

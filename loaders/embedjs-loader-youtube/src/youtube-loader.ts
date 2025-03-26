@@ -3,8 +3,8 @@ import { YoutubeTranscript } from 'youtube-transcript';
 import createDebugMessages from 'debug';
 import md5 from 'md5';
 
-import { BaseLoader } from '@llm-tools/embedjs-interfaces';
-import { cleanString } from '@llm-tools/embedjs-utils';
+import { BaseLoader } from '@cherrystudio/embedjs-interfaces';
+import { cleanString } from '@cherrystudio/embedjs-utils';
 
 export class YoutubeLoader extends BaseLoader<{ type: 'YoutubeLoader' }> {
     private readonly debug = createDebugMessages('embedjs:loader:YoutubeLoader');

@@ -7,16 +7,16 @@ To automatically perform a youtube search and load the top youtube videos to you
 ## Install Youtube addon
 
 ```bash
-npm install @llm-tools/embedjs-loader-youtube
+npm install @cherrystudio/embedjs-loader-youtube
 ```
 
 ## Usage
 
 ```ts
-import { RAGApplicationBuilder } from '@llm-tools/embedjs';
-import { OpenAiEmbeddings } from '@llm-tools/embedjs-openai';
-import { HNSWDb } from '@llm-tools/embedjs-hnswlib';
-import { YoutubeSearchLoader } from '@llm-tools/embedjs-loader-youtube';
+import { RAGApplicationBuilder } from '@cherrystudio/embedjs';
+import { OpenAiEmbeddings } from '@cherrystudio/embedjs-openai';
+import { HNSWDb } from '@cherrystudio/embedjs-hnswlib';
+import { YoutubeSearchLoader } from '@cherrystudio/embedjs-loader-youtube';
 
 const app = await new RAGApplicationBuilder()
 .setModel(SIMPLE_MODELS.OPENAI_GPT4_O)

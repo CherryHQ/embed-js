@@ -7,16 +7,16 @@ You can load any docx file from your local file system or through a URL.
 ## Install MSOffice addon
 
 ```bash
-npm install @llm-tools/embedjs-loader-msoffice
+npm install @cherrystudio/embedjs-loader-msoffice
 ```
 
 ## Usage
 
 ```ts
-import { RAGApplicationBuilder } from '@llm-tools/embedjs';
-import { OpenAiEmbeddings } from '@llm-tools/embedjs-openai';
-import { HNSWDb } from '@llm-tools/embedjs-hnswlib';
-import { DocxLoader } from '@llm-tools/embedjs-loader-msoffice';
+import { RAGApplicationBuilder } from '@cherrystudio/embedjs';
+import { OpenAiEmbeddings } from '@cherrystudio/embedjs-openai';
+import { HNSWDb } from '@cherrystudio/embedjs-hnswlib';
+import { DocxLoader } from '@cherrystudio/embedjs-loader-msoffice';
 
 const app = await new RAGApplicationBuilder()
 .setModel(SIMPLE_MODELS.OPENAI_GPT4_O)

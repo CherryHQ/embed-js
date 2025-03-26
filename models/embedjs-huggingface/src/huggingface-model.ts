@@ -1,7 +1,7 @@
 import createDebugMessages from 'debug';
 import { HuggingFaceInference } from '@langchain/community/llms/hf';
 import { HumanMessage, AIMessage, SystemMessage } from '@langchain/core/messages';
-import { BaseModel, ModelResponse } from '@llm-tools/embedjs-interfaces';
+import { BaseModel, ModelResponse } from '@cherrystudio/embedjs-interfaces';
 
 export class HuggingFace extends BaseModel {
     private readonly debug = createDebugMessages('embedjs:model:HuggingFace');

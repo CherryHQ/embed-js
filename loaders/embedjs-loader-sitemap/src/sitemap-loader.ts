@@ -2,8 +2,8 @@ import md5 from 'md5';
 import Sitemapper from 'sitemapper';
 import createDebugMessages from 'debug';
 
-import { BaseLoader } from '@llm-tools/embedjs-interfaces';
-import { WebLoader } from '@llm-tools/embedjs-loader-web';
+import { BaseLoader } from '@cherrystudio/embedjs-interfaces';
+import { WebLoader } from '@cherrystudio/embedjs-loader-web';
 
 export class SitemapLoader extends BaseLoader<{ type: 'SitemapLoader' }> {
     public static async test(url: string): Promise<boolean> {

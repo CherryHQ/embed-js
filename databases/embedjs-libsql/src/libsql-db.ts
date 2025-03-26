@@ -1,8 +1,8 @@
 import createDebugMessages from 'debug';
 import { Client, createClient } from '@libsql/client';
 
-import { BaseVectorDatabase, ExtractChunkData, InsertChunkData } from '@llm-tools/embedjs-interfaces';
-import { truncateCenterString } from '@llm-tools/embedjs-utils';
+import { BaseVectorDatabase, ExtractChunkData, InsertChunkData } from '@cherrystudio/embedjs-interfaces';
+import { truncateCenterString } from '@cherrystudio/embedjs-utils';
 
 export class LibSqlDb implements BaseVectorDatabase {
     private readonly debug = createDebugMessages('embedjs:vector:LibSqlDb');

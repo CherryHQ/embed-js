@@ -41,11 +41,11 @@ Refer to the function signature below:
 Refer to the following example on how to use the search api:
 
 ```ts Code example
-import { RAGApplicationBuilder } from '@llm-tools/embedjs';
-import { OllamaEmbeddings } from '@llm-tools/embedjs-ollama';
-import { WebLoader } from '@llm-tools/embedjs-loader-web';
-import { HNSWDb } from '@llm-tools/embedjs-hnswlib';
-import { SitemapLoader } from '@llm-tools/embedjs-loader-sitemap';
+import { RAGApplicationBuilder } from '@cherrystudio/embedjs';
+import { OllamaEmbeddings } from '@cherrystudio/embedjs-ollama';
+import { WebLoader } from '@cherrystudio/embedjs-loader-web';
+import { HNSWDb } from '@cherrystudio/embedjs-hnswlib';
+import { SitemapLoader } from '@cherrystudio/embedjs-loader-sitemap';
 
 const ragApplication = await new RAGApplicationBuilder()
 .setModel(new Ollama({ modelName: "llama3.2", baseUrl: 'http://localhost:11434' }))

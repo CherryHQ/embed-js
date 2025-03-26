@@ -7,14 +7,14 @@ You can use redis as a data store.
 ## Install Redis addon
 
 ```bash
-npm install @llm-tools/embedjs-redis
+npm install @cherrystudio/embedjs-redis
 ```
 
 ## Usage
 <CodeGroup>
 ```ts Partial example
-import { RAGApplicationBuilder } from '@llm-tools/embedjs';
-import { RedisStore } from '@llm-tools/embedjs-redis';
+import { RAGApplicationBuilder } from '@cherrystudio/embedjs';
+import { RedisStore } from '@cherrystudio/embedjs-redis';
 
 const app = await new RAGApplicationBuilder()
 .setStore(new RedisStore({ ... }))

@@ -1,8 +1,8 @@
 import { RecursiveCharacterTextSplitter } from '@langchain/textsplitters';
 import md5 from 'md5';
 
-import { BaseLoader } from '@llm-tools/embedjs-interfaces';
-import { truncateCenterString, cleanString } from '@llm-tools/embedjs-utils';
+import { BaseLoader } from '@cherrystudio/embedjs-interfaces';
+import { truncateCenterString, cleanString } from '@cherrystudio/embedjs-utils';
 
 export class TextLoader extends BaseLoader<{ type: 'TextLoader' }> {
     private readonly text: string;

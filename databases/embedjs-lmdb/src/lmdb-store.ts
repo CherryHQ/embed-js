@@ -1,5 +1,5 @@
 import createDebugMessages from 'debug';
-import { BaseStore, Conversation, LoaderListEntry, Message } from '@llm-tools/embedjs-interfaces';
+import { BaseStore, Conversation, LoaderListEntry, Message } from '@cherrystudio/embedjs-interfaces';
 import * as lmdb from 'lmdb';
 
 export class LmdbStore implements BaseStore {

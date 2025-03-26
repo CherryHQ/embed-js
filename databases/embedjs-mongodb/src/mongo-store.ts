@@ -1,6 +1,6 @@
 import createDebugMessages from 'debug';
 import { Collection, MongoClient } from 'mongodb';
-import { BaseStore, Conversation, LoaderListEntry, Message } from '@llm-tools/embedjs-interfaces';
+import { BaseStore, Conversation, LoaderListEntry, Message } from '@cherrystudio/embedjs-interfaces';
 
 export class MongoStore implements BaseStore {
     private readonly debug = createDebugMessages('embedjs:store:MongoCache');

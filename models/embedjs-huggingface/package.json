@@ -1,12 +1,12 @@
 {
-    "name": "@llm-tools/embedjs-huggingface",
-    "version": "0.1.28",
+    "name": "@cherrystudio/embedjs-huggingface",
+    "version": "0.1.29",
     "description": "Enable usage of HuggingFace models with embedjs",
     "dependencies": {
+        "@cherrystudio/embedjs-interfaces": "0.1.29",
         "@huggingface/inference": "^2.8.1",
         "@langchain/community": "^0.3.20",
         "@langchain/core": "^0.3.26",
-        "@llm-tools/embedjs-interfaces": "0.1.28",
         "debug": "^4.4.0"
     },
     "type": "module",
@@ -31,11 +31,11 @@
     ],
     "author": "K V Adhityan",
     "bugs": {
-        "url": "https://github.com/llm-tools/embedjs/issues"
+        "url": "https://github.com/CherryHQ/embed-js/issues"
     },
-    "homepage": "https://github.com/llm-tools/embedjs#readme",
+    "homepage": "https://github.com/CherryHQ/embed-js#readme",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/llm-tools/embedjs.git"
+        "url": "git+https://github.com/CherryHQ/embed-js.git"
     }
 }

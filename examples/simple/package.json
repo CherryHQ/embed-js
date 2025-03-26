@@ -1,5 +1,5 @@
 {
-    "name": "@llm-tools/embedjs-examples-simple",
+    "name": "@cherrystudio/embedjs-examples-simple",
     "version": "0.1.1",
     "type": "module",
     "dependencies": {

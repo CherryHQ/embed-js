@@ -10,14 +10,14 @@ Once done, follow these steps -
 ## Install Ollama addon
 
 ```bash
-npm install @llm-tools/embedjs-ollama
+npm install @cherrystudio/embedjs-ollama
 ```
 
 ## Usage
 
 ```ts
-import { RAGApplicationBuilder } from '@llm-tools/embedjs';
-import { OllamaEmbeddings } from '@llm-tools/embedjs-ollama';
+import { RAGApplicationBuilder } from '@cherrystudio/embedjs';
+import { OllamaEmbeddings } from '@cherrystudio/embedjs-ollama';
 
 const app = await new RAGApplicationBuilder()
 .setEmbeddingModel(new OllamaEmbeddings({

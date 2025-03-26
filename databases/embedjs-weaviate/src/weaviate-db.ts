@@ -2,8 +2,8 @@ import createDebugMessages from 'debug';
 import weaviate, { WeaviateClient, ApiKey, generateUuid5 } from 'weaviate-ts-client';
 import similarity from 'compute-cosine-similarity';
 
-import { BaseVectorDatabase, ExtractChunkData, InsertChunkData } from '@llm-tools/embedjs-interfaces';
-import { toTitleCase } from '@llm-tools/embedjs-utils';
+import { BaseVectorDatabase, ExtractChunkData, InsertChunkData } from '@cherrystudio/embedjs-interfaces';
+import { toTitleCase } from '@cherrystudio/embedjs-utils';
 
 export class WeaviateDb implements BaseVectorDatabase {
     private readonly debug = createDebugMessages('embedjs:vector:WeaviateDb');

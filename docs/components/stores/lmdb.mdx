@@ -7,14 +7,14 @@ You can use [LMDB](https://dbdb.io/db/lmdb) to store values locally on disk.
 ## Install LMDB addon
 
 ```bash
-npm install @llm-tools/embedjs-lmdb
+npm install @cherrystudio/embedjs-lmdb
 ```
 
 ## Usage
 <CodeGroup>
 ```ts Partial example
-import { RAGApplicationBuilder } from '@llm-tools/embedjs';
-import { LmdbStore } from '@llm-tools/embedjs-lmdb';
+import { RAGApplicationBuilder } from '@cherrystudio/embedjs';
+import { LmdbStore } from '@cherrystudio/embedjs-lmdb';
 
 const app = await new RAGApplicationBuilder()
 .setStore(new LmdbStore({ path: path.resolve('./store') }))

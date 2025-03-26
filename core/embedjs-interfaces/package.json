@@ -1,6 +1,6 @@
 {
-    "name": "@llm-tools/embedjs-interfaces",
-    "version": "0.1.28",
+    "name": "@cherrystudio/embedjs-interfaces",
+    "version": "0.1.29",
     "description": "Interfaces for extending the embedjs ecosystem",
     "dependencies": {
         "@langchain/core": "^0.3.26",
@@ -31,11 +31,11 @@
     ],
     "author": "K V Adhityan",
     "bugs": {
-        "url": "https://github.com/llm-tools/embedjs/issues"
+        "url": "https://github.com/CherryHQ/embed-js/issues"
     },
-    "homepage": "https://github.com/llm-tools/embedjs#readme",
+    "homepage": "https://github.com/CherryHQ/embed-js#readme",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/llm-tools/embedjs.git"
+        "url": "git+https://github.com/CherryHQ/embed-js.git"
     }
 }

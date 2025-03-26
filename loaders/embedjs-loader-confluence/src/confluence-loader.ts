@@ -2,8 +2,8 @@ import { ConfluenceClient } from 'confluence.js';
 import createDebugMessages from 'debug';
 import md5 from 'md5';
 
-import { BaseLoader } from '@llm-tools/embedjs-interfaces';
-import { WebLoader } from '@llm-tools/embedjs-loader-web';
+import { BaseLoader } from '@cherrystudio/embedjs-interfaces';
+import { WebLoader } from '@cherrystudio/embedjs-loader-web';
 
 export class ConfluenceLoader extends BaseLoader<{ type: 'ConfluenceLoader' }, { version: number }> {
     private readonly debug = createDebugMessages('embedjs:loader:ConfluenceLoader');

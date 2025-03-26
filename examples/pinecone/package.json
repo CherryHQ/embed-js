@@ -1,5 +1,5 @@
 {
-    "name": "@llm-tools/embedjs-examples-pinecone",
+    "name": "@cherrystudio/embedjs-examples-pinecone",
     "version": "0.1.1",
     "type": "module",
     "dependencies": {

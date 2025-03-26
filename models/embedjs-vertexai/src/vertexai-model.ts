@@ -1,7 +1,7 @@
 import createDebugMessages from 'debug';
 import { ChatVertexAI } from '@langchain/google-vertexai';
 import { AIMessage, HumanMessage, SystemMessage } from '@langchain/core/messages';
-import { BaseModel, ModelResponse } from '@llm-tools/embedjs-interfaces';
+import { BaseModel, ModelResponse } from '@cherrystudio/embedjs-interfaces';
 
 export class VertexAI extends BaseModel {
     private readonly debug = createDebugMessages('embedjs:model:VertexAI');

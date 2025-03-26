@@ -23,9 +23,9 @@ EmbedJs offers a simple yet customizable `search()` API that you can use for sem
 First, let's create your RAG pipeline. Open your NodeJs application and add the following code:
 
 ```ts Create pipeline
-import { RAGApplicationBuilder } from '@llm-tools/embedjs';
-import { OpenAiEmbeddings } from '@llm-tools/embedjs-openai';
-import { HNSWDb } from '@llm-tools/embedjs-hnswlib';
+import { RAGApplicationBuilder } from '@cherrystudio/embedjs';
+import { OpenAiEmbeddings } from '@cherrystudio/embedjs-openai';
+import { HNSWDb } from '@cherrystudio/embedjs-hnswlib';
 
 const app = await new RAGApplicationBuilder()
 .setModel(SIMPLE_MODELS.OPENAI_GPT4_O)
@@ -41,7 +41,7 @@ This initializes your application.
 Now, let's add data to your pipeline. We'll include the Next.JS website and its documentation:
 
 ```ts Ingest data sources
-import { SitemapLoader } from '@llm-tools/embedjs-loader-sitemap';
+import { SitemapLoader } from '@cherrystudio/embedjs-loader-sitemap';
 
 //Add Next.JS Website and docs
 app.addLoader(new SitemapLoader({ url: "https://nextjs.org/sitemap.xml" }))

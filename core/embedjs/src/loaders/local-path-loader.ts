@@ -5,7 +5,7 @@ import fs from 'node:fs';
 import md5 from 'md5';
 
 import { createLoaderFromMimeType } from '../util/mime.js';
-import { BaseLoader, UnfilteredLoaderChunk } from '@llm-tools/embedjs-interfaces';
+import { BaseLoader, UnfilteredLoaderChunk } from '@cherrystudio/embedjs-interfaces';
 
 export class LocalPathLoader extends BaseLoader<{ type: 'LocalPathLoader' }> {
     private readonly debug = createDebugMessages('embedjs:loader:LocalPathLoader');

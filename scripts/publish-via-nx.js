@@ -80,12 +80,13 @@ async function createRelease(dryRun, version, makeGitCommit) {
         specifier: version,
         verbose: true,
         dryRun,
+        firstRelease: true,
     });
 
     const versionMap = new Map();
     console.log('Computing nx release version map');
     for (const [pkgName, { newVersion }] of Object.entries(projectsVersionData)) {
-        versionMap.set(`@llm-tools/${pkgName}`, newVersion);
+        versionMap.set(`@cherrystudio/${pkgName}`, newVersion);
     }
 
     console.log('Updating projects actual version to match NX computed values');

@@ -2,12 +2,12 @@
 title: LibSQL
 ---
 
-LibSQL is an open source fork of SQLite and in most cases it is a drop in replacement for SQLite. It has native in-built support for vector similarity search. 
+LibSQL is an open source fork of SQLite and in most cases it is a drop in replacement for SQLite. It has native in-built support for vector similarity search.
 Read more about LibSQL's support for AI [here](https://docs.turso.tech/features/ai-and-embeddings).
 You can run LibSQL locally with EmbedJs and is available via the LibSQL extension for embedJs.
 
 <Note>
-    LibSql can also be used to store conversations and other data generated in embedJs. 
+    LibSql can also be used to store conversations and other data generated in embedJs.
     This is done via the LibSqlStore available in the LibSQL extension for embedJs. Read more about it [here](/components/stores/libsql)
 </Note>
 
@@ -15,16 +15,16 @@ You can run LibSQL locally with EmbedJs and is available via the LibSQL extensio
 ## Install LibSQL addon
 
 ```bash
-npm install @llm-tools/embedjs-libsql
+npm install @cherrystudio/embedjs-libsql
 ```
 
 ## Usage
 <CodeGroup>
 ```ts Example
-import { RAGApplicationBuilder } from '@llm-tools/embedjs';
-import { OpenAiEmbeddings } from '@llm-tools/embedjs-openai';
-import { WebLoader } from '@llm-tools/embedjs-loader-web';
-import { LibSqlDb } from '@llm-tools/embedjs-libsql';
+import { RAGApplicationBuilder } from '@cherrystudio/embedjs';
+import { OpenAiEmbeddings } from '@cherrystudio/embedjs-openai';
+import { WebLoader } from '@cherrystudio/embedjs-loader-web';
+import { LibSqlDb } from '@cherrystudio/embedjs-libsql';
 
 // set OPENAI_API_KEY in your env
 process.env.OPENAI_API_KEY = "sk-xxx";

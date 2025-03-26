@@ -2,7 +2,7 @@ import md5 from 'md5';
 import usetube from 'usetube';
 import createDebugMessages from 'debug';
 
-import { BaseLoader } from '@llm-tools/embedjs-interfaces';
+import { BaseLoader } from '@cherrystudio/embedjs-interfaces';
 import { YoutubeChannelLoader } from './youtube-channel-loader.js';
 
 export class YoutubeSearchLoader extends BaseLoader<{ type: 'YoutubeSearchLoader' }> {

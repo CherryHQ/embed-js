@@ -24,14 +24,14 @@ Once this is done, you can configure your embedJs app -
 ## Install VertexAi addon
 
 ```bash
-npm install @llm-tools/embedjs-vertexai
+npm install @cherrystudio/embedjs-vertexai
 ```
 
 ## Usage
 
 ```ts
-import { RAGApplicationBuilder } from '@llm-tools/embedjs';
-import { Ollama } from '@llm-tools/embedjs-vertexai';
+import { RAGApplicationBuilder } from '@cherrystudio/embedjs';
+import { Ollama } from '@cherrystudio/embedjs-vertexai';
 
 const app = await new RAGApplicationBuilder()
 .setModel(new VertexAI({ modelName: 'gemini-1.5-pro-preview-0409'}))

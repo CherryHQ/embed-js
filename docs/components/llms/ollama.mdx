@@ -8,14 +8,14 @@ Once Ollama is installed, you can start a local LLM by executing `ollama run <mo
 ## Install Ollama addon
 
 ```bash
-npm install @llm-tools/embedjs-ollama
+npm install @cherrystudio/embedjs-ollama
 ```
 
 ## Usage
 
 ```ts
-import { RAGApplicationBuilder } from '@llm-tools/embedjs';
-import { Ollama } from '@llm-tools/embedjs-ollama';
+import { RAGApplicationBuilder } from '@cherrystudio/embedjs';
+import { Ollama } from '@cherrystudio/embedjs-ollama';
 
 const app = await new RAGApplicationBuilder()
 .setModel(new Ollama({

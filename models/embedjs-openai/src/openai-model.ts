@@ -1,7 +1,7 @@
 import createDebugMessages from 'debug';
 import { ChatOpenAI } from '@langchain/openai';
 import { HumanMessage, AIMessage, SystemMessage } from '@langchain/core/messages';
-import { BaseModel, ModelResponse } from '@llm-tools/embedjs-interfaces';
+import { BaseModel, ModelResponse } from '@cherrystudio/embedjs-interfaces';
 
 export class OpenAi extends BaseModel {
     private readonly debug = createDebugMessages('embedjs:model:OpenAi');

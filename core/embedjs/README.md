@@ -3,8 +3,8 @@
 </p>
 
 <p align="center">
-    <a href="https://www.npmjs.com/package/@llm-tools/embedjs"  target="_blank"><img alt="License" src="https://img.shields.io/npm/l/%40llm-tools%2Fembedjs?style=for-the-badge"></a>
-    <a href="https://www.npmjs.com/package/@llm-tools/embedjs"  target="_blank"><img alt="NPM Version" src="https://img.shields.io/npm/v/%40llm-tools/embedjs?style=for-the-badge"></a>
+    <a href="https://www.npmjs.com/package/@cherrystudio/embedjs"  target="_blank"><img alt="License" src="https://img.shields.io/npm/l/%40cherrystudio%2Fembedjs?style=for-the-badge"></a>
+    <a href="https://www.npmjs.com/package/@cherrystudio/embedjs"  target="_blank"><img alt="NPM Version" src="https://img.shields.io/npm/v/%40cherrystudio/embed-js?style=for-the-badge"></a>
 </p>
 
 <hr />
@@ -29,6 +29,6 @@ Comprehensive guides and API documentation are available to help you get the mos
 Contributions are welcome! Please check out the issues on the repository, and feel free to open a pull request.
 For more information, please see the [contributing guidelines](CONTRIBUTING.md).
 
-<a href="https://github.com/llm-tools/embedjs/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=llm-tools/embedJs" />
+<a href="https://github.com/CherryHQ/embed-js/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=CherryHQ/embed-js" />
 </a>

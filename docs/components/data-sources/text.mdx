@@ -7,9 +7,9 @@ Text is a local data type. To supply your own text, use the `TextLoader` and ent
 ## Usage
 
 ```ts
-import { RAGApplicationBuilder, TextLoader } from '@llm-tools/embedjs';
-import { OpenAiEmbeddings } from '@llm-tools/embedjs-openai';
-import { HNSWDb } from '@llm-tools/embedjs-hnswlib';
+import { RAGApplicationBuilder, TextLoader } from '@cherrystudio/embedjs';
+import { OpenAiEmbeddings } from '@cherrystudio/embedjs-openai';
+import { HNSWDb } from '@cherrystudio/embedjs-hnswlib';
 
 const app = await new RAGApplicationBuilder()
 .setModel(SIMPLE_MODELS.OPENAI_GPT4_O)

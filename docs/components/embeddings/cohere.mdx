@@ -17,15 +17,15 @@ COHERE_API_KEY="<YOUR_KEY>"
 ## Install Cohere addon
 
 ```bash
-npm install @llm-tools/embedjs-cohere
+npm install @cherrystudio/embedjs-cohere
 ```
 
 ## Usage
 
 ```ts
-import { RAGApplicationBuilder } from '@llm-tools/embedjs';
-import { CohereEmbeddings } from '@llm-tools/embedjs-cohere';
-import { HNSWDb } from '@llm-tools/embedjs-hnswlib';
+import { RAGApplicationBuilder } from '@cherrystudio/embedjs';
+import { CohereEmbeddings } from '@cherrystudio/embedjs-cohere';
+import { HNSWDb } from '@cherrystudio/embedjs-hnswlib';
 
 const app = await new RAGApplicationBuilder()
 .setEmbeddingModel(new CohereEmbeddings())

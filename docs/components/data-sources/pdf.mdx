@@ -7,7 +7,7 @@ You can load any pdf file from your local file system or through a URL.
 ## Install PDF addon
 
 ```bash
-npm install @llm-tools/embedjs-loader-pdf
+npm install @cherrystudio/embedjs-loader-pdf
 ```
 
 ## Usage
@@ -15,10 +15,10 @@ npm install @llm-tools/embedjs-loader-pdf
 ### Load from a local file
 
 ```ts
-import { RAGApplicationBuilder } from '@llm-tools/embedjs';
-import { OpenAiEmbeddings } from '@llm-tools/embedjs-openai';
-import { HNSWDb } from '@llm-tools/embedjs-hnswlib';
-import { PdfLoader } from '@llm-tools/embedjs-loader-pdf';
+import { RAGApplicationBuilder } from '@cherrystudio/embedjs';
+import { OpenAiEmbeddings } from '@cherrystudio/embedjs-openai';
+import { HNSWDb } from '@cherrystudio/embedjs-hnswlib';
+import { PdfLoader } from '@cherrystudio/embedjs-loader-pdf';
 
 const app = await new RAGApplicationBuilder()
 .setModel(SIMPLE_MODELS.OPENAI_GPT4_O)
@@ -32,10 +32,10 @@ app.addLoader(new PdfLoader({ filePathOrUrl: '/path/to/file.pdf' }))
 ### Load from URL
 
 ```ts
-import { RAGApplicationBuilder } from '@llm-tools/embedjs';
-import { OpenAiEmbeddings } from '@llm-tools/embedjs-openai';
-import { HNSWDb } from '@llm-tools/embedjs-hnswlib';
-import { PdfLoader } from '@llm-tools/embedjs-loader-pdf';
+import { RAGApplicationBuilder } from '@cherrystudio/embedjs';
+import { OpenAiEmbeddings } from '@cherrystudio/embedjs-openai';
+import { HNSWDb } from '@cherrystudio/embedjs-hnswlib';
+import { PdfLoader } from '@cherrystudio/embedjs-loader-pdf';
 
 const app = await new RAGApplicationBuilder()
 .setModel(SIMPLE_MODELS.OPENAI_GPT4_O)

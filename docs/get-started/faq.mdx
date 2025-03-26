@@ -8,10 +8,10 @@ description: 'Collections of all the frequently asked questions'
 <CodeGroup>
 ```ts index.ts
 import 'dotenv/config';
-import { RAGApplicationBuilder } from '@llm-tools/embedjs';
-import { Mistral } from '@llm-tools/embedjs-mistral';
-import { WebLoader } from '@llm-tools/embedjs-loader-web';
-import { HNSWDb } from '@llm-tools/embedjs-hnswlib';
+import { RAGApplicationBuilder } from '@cherrystudio/embedjs';
+import { Mistral } from '@cherrystudio/embedjs-mistral';
+import { WebLoader } from '@cherrystudio/embedjs-loader-web';
+import { HNSWDb } from '@cherrystudio/embedjs-hnswlib';
 
 const llmApplication = await new RAGApplicationBuilder()
     .setModel(new Mistral({ modelName: 'mistral-medium' }))
@@ -31,10 +31,10 @@ Use the model `gpt-4o` provided my openai.
 <CodeGroup>
 ```ts index.ts
 import 'dotenv/config';
-import { RAGApplicationBuilder } from '@llm-tools/embedjs';
-import { OpenAi, OpenAiEmbeddings } from '@llm-tools/embedjs-openai';
-import { WebLoader } from '@llm-tools/embedjs-loader-web';
-import { HNSWDb } from '@llm-tools/embedjs-hnswlib';
+import { RAGApplicationBuilder } from '@cherrystudio/embedjs';
+import { OpenAi, OpenAiEmbeddings } from '@cherrystudio/embedjs-openai';
+import { WebLoader } from '@cherrystudio/embedjs-loader-web';
+import { HNSWDb } from '@cherrystudio/embedjs-hnswlib';
 
 const llmApplication = await new RAGApplicationBuilder()
     .setModel(new OpenAi({ modelName: 'gpt-4o' }))
@@ -52,9 +52,9 @@ console.log(await llmApplication.query('Who founded Tesla?'));
 <Accordion title="I don't have OpenAI credits. How can I use a local model?">
 <CodeGroup>
 ```ts index.ts
-import { RAGApplicationBuilder } from '@llm-tools/embedjs';
-import { OllamaEmbeddings } from '@llm-tools/embedjs-ollama';
-import { WebLoader } from '@llm-tools/embedjs-loader-web';
+import { RAGApplicationBuilder } from '@cherrystudio/embedjs';
+import { OllamaEmbeddings } from '@cherrystudio/embedjs-ollama';
+import { WebLoader } from '@cherrystudio/embedjs-loader-web';
 
 const ragApplication = await new RAGApplicationBuilder()
     .setModel(new Ollama({ modelName: "llama3.2", baseUrl: 'http://localhost:11434' }))

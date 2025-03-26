@@ -1,7 +1,7 @@
 import createDebugMessages from 'debug';
 import { AIMessage, HumanMessage, SystemMessage } from '@langchain/core/messages';
 import { LlamaCpp as ChatLlamaCpp } from '@langchain/community/llms/llama_cpp';
-import { BaseModel, ModelResponse } from '@llm-tools/embedjs-interfaces';
+import { BaseModel, ModelResponse } from '@cherrystudio/embedjs-interfaces';
 
 export class LlamaCpp extends BaseModel {
     private readonly debug = createDebugMessages('embedjs:model:LlamaCpp');

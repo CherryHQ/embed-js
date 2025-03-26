@@ -1,5 +1,5 @@
 import { CohereEmbeddings as LangChainCohereEmbeddings } from '@langchain/cohere';
-import { BaseEmbeddings } from '@llm-tools/embedjs-interfaces';
+import { BaseEmbeddings } from '@cherrystudio/embedjs-interfaces';
 
 export class CohereEmbeddings extends BaseEmbeddings {
     private model: LangChainCohereEmbeddings;

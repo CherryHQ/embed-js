@@ -8,7 +8,7 @@ description: '💡 Create an AI app on your own data in a minute'
 First install the NodeJs package:
 
 ```bash
-npm i @llm-tools/embedjs
+npm i @cherrystudio/embedjs
 ```
 
 Once you have installed the package, depending upon your preference you can either use:
@@ -34,10 +34,10 @@ These models are free and can be run locally using Ollama.
 
 <CodeGroup>
 ```ts ollama_demo.ts
-import { RAGApplicationBuilder } from '@llm-tools/embedjs';
-import { OllamaEmbeddings, Ollama } from '@llm-tools/embedjs-ollama';
-import { WebLoader } from '@llm-tools/embedjs-loader-web';
-import { HNSWDb } from '@llm-tools/embedjs-hnswlib';
+import { RAGApplicationBuilder } from '@cherrystudio/embedjs';
+import { OllamaEmbeddings, Ollama } from '@cherrystudio/embedjs-ollama';
+import { WebLoader } from '@cherrystudio/embedjs-loader-web';
+import { HNSWDb } from '@cherrystudio/embedjs-hnswlib';
 
 const ragApplication = await new RAGApplicationBuilder()
 .setModel(new Ollama({ modelName: "llama3.2", baseUrl: 'http://localhost:11434' }))
@@ -63,10 +63,10 @@ In this section, we will use both an LLM and embedding model from OpenAI.
 
 <CodeGroup>
 ```ts openai_demo.ts
-import { RAGApplicationBuilder, SIMPLE_MODELS } from '@llm-tools/embedjs';
-import { OpenAiEmbeddings } from '@llm-tools/embedjs-openai';
-import { WebLoader } from '@llm-tools/embedjs-loader-web';
-import { HNSWDb } from '@llm-tools/embedjs-hnswlib';
+import { RAGApplicationBuilder, SIMPLE_MODELS } from '@cherrystudio/embedjs';
+import { OpenAiEmbeddings } from '@cherrystudio/embedjs-openai';
+import { WebLoader } from '@cherrystudio/embedjs-loader-web';
+import { HNSWDb } from '@cherrystudio/embedjs-hnswlib';
 
 //Replace this with your OpenAI key
 process.env.OPENAI_API_KEY = "sk-xxxx"

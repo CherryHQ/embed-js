@@ -1,6 +1,6 @@
 import createDebugMessages from 'debug';
 import { CosmosClient, CosmosClientOptions, Container } from '@azure/cosmos';
-import { BaseVectorDatabase, ExtractChunkData, InsertChunkData } from '@llm-tools/embedjs-interfaces';
+import { BaseVectorDatabase, ExtractChunkData, InsertChunkData } from '@cherrystudio/embedjs-interfaces';
 
 export class CosmosDb implements BaseVectorDatabase {
     private readonly debug = createDebugMessages('embedjs:vector:CosmosDb');

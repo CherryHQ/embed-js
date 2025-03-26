@@ -9,15 +9,15 @@ To use this model, you need to authenticate to Vertex AI on GCP. Refer [here](/c
 ## Install VertexAi addon
 
 ```bash
-npm install @llm-tools/embedjs-vertexai
+npm install @cherrystudio/embedjs-vertexai
 ```
 
 ## Usage
 
 ```ts
-import { RAGApplicationBuilder } from '@llm-tools/embedjs';
-import { GeckoEmbeddings } from '@llm-tools/embedjs-vertexai';
-import { HNSWDb } from '@llm-tools/embedjs-hnswlib';
+import { RAGApplicationBuilder } from '@cherrystudio/embedjs';
+import { GeckoEmbeddings } from '@cherrystudio/embedjs-vertexai';
+import { HNSWDb } from '@cherrystudio/embedjs-hnswlib';
 
 const app = await new RAGApplicationBuilder()
 .setEmbeddingModel(new GeckoEmbeddings())

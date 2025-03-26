@@ -2,7 +2,7 @@ import { CreateIndexSpec } from '@pinecone-database/pinecone/dist/control/create
 import { Pinecone, PineconeRecord } from '@pinecone-database/pinecone';
 import createDebugMessages from 'debug';
 
-import { BaseVectorDatabase, ExtractChunkData, InsertChunkData } from '@llm-tools/embedjs-interfaces';
+import { BaseVectorDatabase, ExtractChunkData, InsertChunkData } from '@cherrystudio/embedjs-interfaces';
 
 export class PineconeDb implements BaseVectorDatabase {
     private readonly debug = createDebugMessages('embedjs:vector:PineconeDb');

@@ -1,9 +1,9 @@
 import 'dotenv/config';
 import path from 'node:path';
-import { RAGApplicationBuilder, SIMPLE_MODELS } from '@llm-tools/embedjs';
-import { LibSqlDb, LibSqlStore } from '@llm-tools/embedjs-libsql';
-import { OpenAiEmbeddings } from '@llm-tools/embedjs-openai';
-import { WebLoader } from '@llm-tools/embedjs-loader-web';
+import { RAGApplicationBuilder, SIMPLE_MODELS } from '@cherrystudio/embedjs';
+import { LibSqlDb, LibSqlStore } from '@cherrystudio/embedjs-libsql';
+import { OpenAiEmbeddings } from '@cherrystudio/embedjs-openai';
+import { WebLoader } from '@cherrystudio/embedjs-loader-web';
 
 const databasePath = path.resolve('./examples/libsql/data.db');
 const ragApplication = await new RAGApplicationBuilder()

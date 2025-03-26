@@ -1,10 +1,10 @@
 {
-    "name": "@llm-tools/embedjs-cosmos",
-    "version": "0.1.28",
+    "name": "@cherrystudio/embedjs-cosmos",
+    "version": "0.1.29",
     "description": "Add CosmosDB support to embedjs",
     "dependencies": {
         "@azure/cosmos": "^4.2.0",
-        "@llm-tools/embedjs-interfaces": "0.1.28",
+        "@cherrystudio/embedjs-interfaces": "0.1.29",
         "debug": "^4.4.0"
     },
     "type": "module",
@@ -29,11 +29,11 @@
     ],
     "author": "K V Adhityan",
     "bugs": {
-        "url": "https://github.com/llm-tools/embedjs/issues"
+        "url": "https://github.com/CherryHQ/embed-js/issues"
     },
-    "homepage": "https://github.com/llm-tools/embedjs#readme",
+    "homepage": "https://github.com/CherryHQ/embed-js#readme",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/llm-tools/embedjs.git"
+        "url": "git+https://github.com/CherryHQ/embed-js.git"
     }
 }

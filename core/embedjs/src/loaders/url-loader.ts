@@ -2,8 +2,8 @@ import { getMimeType } from 'stream-mime-type';
 import createDebugMessages from 'debug';
 import md5 from 'md5';
 
-import { contentTypeToMimeType, getSafe, truncateCenterString } from '@llm-tools/embedjs-utils';
-import { BaseLoader } from '@llm-tools/embedjs-interfaces';
+import { contentTypeToMimeType, getSafe, truncateCenterString } from '@cherrystudio/embedjs-utils';
+import { BaseLoader } from '@cherrystudio/embedjs-interfaces';
 import { createLoaderFromMimeType } from '../util/mime.js';
 
 export class UrlLoader extends BaseLoader<{ type: 'UrlLoader' }> {

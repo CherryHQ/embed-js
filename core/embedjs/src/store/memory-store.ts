@@ -1,4 +1,4 @@
-import { BaseStore, Conversation, LoaderListEntry, Message } from '@llm-tools/embedjs-interfaces';
+import { BaseStore, Conversation, LoaderListEntry, Message } from '@cherrystudio/embedjs-interfaces';
 
 export class MemoryStore implements BaseStore {
     private loaderCustomValues: Record<string, Record<string, unknown>>;

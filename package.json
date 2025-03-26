@@ -1,13 +1,13 @@
 {
     "type": "module",
-    "name": "@llm-tools/embedjs-source",
+    "name": "@cherrystudio/embedjs-source",
     "description": "A NodeJS RAG framework to easily work with LLMs and custom datasets",
     "author": "K V Adhityan",
     "bugs": {
-        "url": "https://github.com/llm-tools/embedjs/issues"
+        "url": "https://github.com/CherryHQ/embed-js/issues"
     },
-    "homepage": "https://github.com/llm-tools/embedjs#readme",
-    "version": "0.1.28",
+    "homepage": "https://github.com/CherryHQ/embed-js#readme",
+    "version": "0.1.29",
     "scripts": {
         "build:esm": "nx run-many --t=build",
         "build:cjs": "nx run-many --t=build-cjs && node scripts/move-cjs-to-dist.js",
@@ -53,7 +53,7 @@
     ],
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/llm-tools/embedjs.git"
+        "url": "git+https://github.com/CherryHQ/embed-js.git"
     },
     "engines": {
         "node": ">= 18.0.0"

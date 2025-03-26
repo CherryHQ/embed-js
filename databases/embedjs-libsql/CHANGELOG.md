@@ -2,4 +2,4 @@
 
 ### 🚀 Features
 
-- added sqlite vector database ([cd27bc5](https://github.com/llm-tools/embedJs/commit/cd27bc5))
+- added sqlite vector database ([cd27bc5](https://github.com/CherryHQ/embed-js/commit/cd27bc5))

@@ -7,14 +7,14 @@ You can use [LibSQL](https://docs.turso.tech/introduction) a fork of SQLite to s
 ## Install LibSQL addon
 
 ```bash
-npm install @llm-tools/embedjs-libsql
+npm install @cherrystudio/embedjs-libsql
 ```
 
 ## Usage
 <CodeGroup>
 ```ts Partial example
-import { RAGApplicationBuilder } from '@llm-tools/embedjs';
-import { LibSqlStore } from '@llm-tools/embedjs-libsql';
+import { RAGApplicationBuilder } from '@cherrystudio/embedjs';
+import { LibSqlStore } from '@cherrystudio/embedjs-libsql';
 
 const app = await new RAGApplicationBuilder()
 .setStore(new LibSqlStore({ path: './data.db' }))

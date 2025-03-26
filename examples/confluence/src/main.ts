@@ -1,9 +1,9 @@
 import 'dotenv/config';
 import path from 'node:path';
-import { RAGApplicationBuilder } from '@llm-tools/embedjs';
-import { LibSqlDb, LibSqlStore } from '@llm-tools/embedjs-libsql';
-import { OpenAi, OpenAiEmbeddings } from '@llm-tools/embedjs-openai';
-import { ConfluenceLoader } from '@llm-tools/embedjs-loader-confluence';
+import { RAGApplicationBuilder } from '@cherrystudio/embedjs';
+import { LibSqlDb, LibSqlStore } from '@cherrystudio/embedjs-libsql';
+import { OpenAi, OpenAiEmbeddings } from '@cherrystudio/embedjs-openai';
+import { ConfluenceLoader } from '@cherrystudio/embedjs-loader-confluence';
 
 const databasePath = path.resolve('./examples/confluence/data.db');
 const llmApplication = await new RAGApplicationBuilder()

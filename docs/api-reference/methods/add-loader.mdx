@@ -15,10 +15,10 @@ The `addLoader()` method is used to load the data sources from different data so
 ### Load data from webpage
 
 ```ts Code example
-import { RAGApplicationBuilder } from '@llm-tools/embedjs';
-import { OpenAiEmbeddings } from '@llm-tools/embedjs-openai';
-import { HNSWDb } from '@llm-tools/embedjs-hnswlib';
-import { WebLoader } from '@llm-tools/embedjs-loader-web';
+import { RAGApplicationBuilder } from '@cherrystudio/embedjs';
+import { OpenAiEmbeddings } from '@cherrystudio/embedjs-openai';
+import { HNSWDb } from '@cherrystudio/embedjs-hnswlib';
+import { WebLoader } from '@cherrystudio/embedjs-loader-web';
 
 const app = await new RAGApplicationBuilder()
 .setModel(SIMPLE_MODELS.OPENAI_GPT4_O)
@@ -33,10 +33,10 @@ await app.addLoader(new WebLoader({ urlOrContent: 'https://www.forbes.com/profil
 ### Load data from sitemap
 
 ```ts Code example
-import { RAGApplicationBuilder } from '@llm-tools/embedjs';
-import { OpenAiEmbeddings } from '@llm-tools/embedjs-openai';
-import { HNSWDb } from '@llm-tools/embedjs-hnswlib';
-import { SitemapLoader } from '@llm-tools/embedjs-loader-sitemap';
+import { RAGApplicationBuilder } from '@cherrystudio/embedjs';
+import { OpenAiEmbeddings } from '@cherrystudio/embedjs-openai';
+import { HNSWDb } from '@cherrystudio/embedjs-hnswlib';
+import { SitemapLoader } from '@cherrystudio/embedjs-loader-sitemap';
 
 const app = await new RAGApplicationBuilder()
 .setModel(SIMPLE_MODELS.OPENAI_GPT4_O)

@@ -1,5 +1,5 @@
-import { BaseLoader } from '@llm-tools/embedjs-interfaces';
-import { cleanString, truncateCenterString } from '@llm-tools/embedjs-utils';
+import { BaseLoader } from '@cherrystudio/embedjs-interfaces';
+import { cleanString, truncateCenterString } from '@cherrystudio/embedjs-utils';
 import md5 from 'md5';
 
 export class JsonLoader extends BaseLoader<{ type: 'JsonLoader' }> {

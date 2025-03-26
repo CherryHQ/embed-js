@@ -5,8 +5,8 @@ import exifremove from 'exifremove';
 import fs from 'node:fs';
 import md5 from 'md5';
 
-import { BaseLoader, BaseModel } from '@llm-tools/embedjs-interfaces';
-import { cleanString, contentTypeToMimeType, getSafe, isValidURL, streamToBuffer } from '@llm-tools/embedjs-utils';
+import { BaseLoader, BaseModel } from '@cherrystudio/embedjs-interfaces';
+import { cleanString, contentTypeToMimeType, getSafe, isValidURL, streamToBuffer } from '@cherrystudio/embedjs-utils';
 
 export class ImageLoader extends BaseLoader<{ type: 'ImageLoader' }> {
     private readonly debug = createDebugMessages('embedjs:loader:ImageLoader');

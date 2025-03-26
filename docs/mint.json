@@ -4,7 +4,7 @@
     "logo": {
         "dark": "/logo/dark.webp",
         "light": "/logo/light.webp",
-        "href": "https://github.com/llm-tools/embedjs"
+        "href": "https://github.com/CherryHQ/embed-js"
     },
     "favicon": "/favicon.png",
     "colors": {
@@ -33,12 +33,12 @@
     "topbarLinks": [
         {
             "name": "GitHub",
-            "url": "https://github.com/llm-tools/embedJs"
+            "url": "https://github.com/CherryHQ/embed-js"
         }
     ],
     "topbarCtaButton": {
         "name": "Install",
-        "url": "https://www.npmjs.com/package/@llm-tools/embedjs"
+        "url": "https://www.npmjs.com/package/@cherrystudio/embedjs"
     },
     "primaryTab": {
         "name": "📘 Documentation"
@@ -198,7 +198,7 @@
     ],
     "footerSocials": {
         "website": "https://ragkit.ai",
-        "github": "https://github.com/llm-tools/embedJs",
+        "github": "https://github.com/CherryHQ/embed-js",
         "linkedin": "https://www.linkedin.com/in/adhityan/"
     },
     "isWhiteLabeled": true,

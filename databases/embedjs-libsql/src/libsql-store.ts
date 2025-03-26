@@ -1,6 +1,6 @@
 import createDebugMessages from 'debug';
 import { Client, createClient } from '@libsql/client';
-import { BaseStore, Conversation, LoaderListEntry, Message } from '@llm-tools/embedjs-interfaces';
+import { BaseStore, Conversation, LoaderListEntry, Message } from '@cherrystudio/embedjs-interfaces';
 
 export class LibSqlStore implements BaseStore {
     private readonly debug = createDebugMessages('embedjs:store:LibSqlStore');

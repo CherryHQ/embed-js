@@ -1,4 +1,4 @@
-import { BaseEmbeddings } from '@llm-tools/embedjs-interfaces';
+import { BaseEmbeddings } from '@cherrystudio/embedjs-interfaces';
 import { getLlama, Llama, LlamaEmbedding, LlamaEmbeddingContext, LlamaModel } from 'node-llama-cpp';
 
 export class LlamaCppEmbeddings extends BaseEmbeddings {

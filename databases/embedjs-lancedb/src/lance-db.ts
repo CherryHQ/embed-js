@@ -4,7 +4,7 @@ import createDebugMessages from 'debug';
 import similarity from 'compute-cosine-similarity';
 import { Table, connect } from '@lancedb/lancedb';
 
-import { BaseVectorDatabase, ExtractChunkData, InsertChunkData } from '@llm-tools/embedjs-interfaces';
+import { BaseVectorDatabase, ExtractChunkData, InsertChunkData } from '@cherrystudio/embedjs-interfaces';
 
 export class LanceDb implements BaseVectorDatabase {
     private readonly debug = createDebugMessages('embedjs:vector:LanceDb');
