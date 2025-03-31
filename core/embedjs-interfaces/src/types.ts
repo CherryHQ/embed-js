@@ -1,19 +1,19 @@
 export type LoaderMetadata<T> = T & { source: string };
 export type LoaderChunk<
-    Meta extends Record<string, string | number | boolean> = Record<string, string | number | boolean>,
+    Meta extends Record<string, string | number | boolean | string[]> = Record<string, string | number | boolean | string[]>,
 > = {
     pageContent: string;
     contentHash: string;
     metadata: LoaderMetadata<Meta>;
 };
 export type UnfilteredLoaderChunk<
-    Meta extends Record<string, string | number | boolean> = Record<string, string | number | boolean>,
+    Meta extends Record<string, string | number | boolean | string[]> = Record<string, string | number | boolean | string[]>,
 > = {
     pageContent: string;
     metadata: LoaderMetadata<Meta>;
 };
 
-export type Metadata<T> = T & { id: string; uniqueLoaderId: string; source: string };
+export type Metadata<T> = T & { id: string; uniqueLoaderId: string; source: string; images?: [] };
 export type Chunk<Meta extends Record<string, string | number | boolean> = Record<string, string | number | boolean>> =
     {
         pageContent: string;
@@ -83,3 +83,11 @@ export type QueryResponse = Extract<Message, { actor: 'AI' }> & {
         outputTokens: number | 'UNKNOWN';
     };
 };
+
+export type ImageArea =  {
+    url: string
+    areaPosition: {
+      startOffset: number
+      endOffset: number
+    }
+  }

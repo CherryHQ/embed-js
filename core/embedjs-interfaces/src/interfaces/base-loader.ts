@@ -7,7 +7,7 @@ import { LoaderChunk, UnfilteredLoaderChunk } from '../types.js';
 import { BaseModel } from './base-model.js';
 
 export abstract class BaseLoader<
-    MetadataTemplate extends Record<string, string | number | boolean> = Record<string, string | number | boolean>,
+    MetadataTemplate extends Record<string, string | number | boolean | string[]> = Record<string, string | number | boolean| string[]>,
     CacheTemplate extends Record<string, unknown> = Record<string, unknown>,
 > extends EventEmitter {
     private static store: BaseStore;
