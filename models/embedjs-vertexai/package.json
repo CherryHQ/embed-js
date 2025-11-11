@@ -1,9 +1,9 @@
 {
     "name": "@cherrystudio/embedjs-vertexai",
-    "version": "0.1.30",
+    "version": "0.1.33",
     "description": "Enable usage of VertexAI models with embedjs",
     "dependencies": {
-        "@cherrystudio/embedjs-interfaces": "0.1.30",
+        "@cherrystudio/embedjs-interfaces": "0.1.33",
         "@langchain/core": "^0.3.26",
         "@langchain/google-vertexai": "^0.1.5",
         "debug": "^4.4.0"

@@ -1,10 +1,10 @@
 {
     "name": "@cherrystudio/embedjs-loader-youtube",
-    "version": "0.1.30",
+    "version": "0.1.33",
     "description": "Youtube transcript and channel recursive loader for embedjs",
     "dependencies": {
-        "@cherrystudio/embedjs-interfaces": "0.1.30",
-        "@cherrystudio/embedjs-utils": "0.1.30",
+        "@cherrystudio/embedjs-interfaces": "0.1.33",
+        "@cherrystudio/embedjs-utils": "0.1.33",
         "@langchain/textsplitters": "^0.1.0",
         "debug": "^4.4.0",
         "md5": "^2.3.0",

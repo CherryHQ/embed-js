@@ -1,10 +1,10 @@
 {
     "name": "@cherrystudio/embedjs-loader-msoffice",
-    "version": "0.1.30",
+    "version": "0.1.33",
     "description": "Word, PPT and Excel loader for embedjs",
     "dependencies": {
-        "@cherrystudio/embedjs-interfaces": "0.1.30",
-        "@cherrystudio/embedjs-utils": "0.1.30",
+        "@cherrystudio/embedjs-interfaces": "0.1.33",
+        "@cherrystudio/embedjs-utils": "0.1.33",
         "@langchain/textsplitters": "^0.1.0",
         "md5": "^2.3.0",
         "office-text-extractor": "^3.0.3"

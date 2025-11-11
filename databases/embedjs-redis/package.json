@@ -1,9 +1,9 @@
 {
     "name": "@cherrystudio/embedjs-redis",
-    "version": "0.1.30",
+    "version": "0.1.33",
     "description": "Add Redis support to embedjs",
     "dependencies": {
-        "@cherrystudio/embedjs-interfaces": "0.1.30",
+        "@cherrystudio/embedjs-interfaces": "0.1.33",
         "ioredis": "^5.4.2"
     },
     "type": "module",

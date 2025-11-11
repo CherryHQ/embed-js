@@ -1,10 +1,10 @@
 {
     "name": "@cherrystudio/embedjs-loader-confluence",
-    "version": "0.1.30",
+    "version": "0.1.33",
     "description": "Confluence loader for embedjs",
     "dependencies": {
-        "@cherrystudio/embedjs-interfaces": "0.1.30",
-        "@cherrystudio/embedjs-loader-web": "0.1.30",
+        "@cherrystudio/embedjs-interfaces": "0.1.33",
+        "@cherrystudio/embedjs-loader-web": "0.1.33",
         "confluence.js": "^1.7.4",
         "debug": "^4.4.0",
         "md5": "^2.3.0"

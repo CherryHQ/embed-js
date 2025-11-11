@@ -1,10 +1,10 @@
 {
     "name": "@cherrystudio/embedjs-libsql",
-    "version": "0.1.30",
+    "version": "0.1.33",
     "description": "Add LibSQL support to embedjs",
     "dependencies": {
-        "@cherrystudio/embedjs-interfaces": "0.1.30",
-        "@cherrystudio/embedjs-utils": "0.1.30",
+        "@cherrystudio/embedjs-interfaces": "0.1.33",
+        "@cherrystudio/embedjs-utils": "0.1.33",
         "@libsql/client": "^0.14.0",
         "debug": "^4.4.0"
     },

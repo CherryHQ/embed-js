@@ -1,9 +1,9 @@
 {
     "name": "@cherrystudio/embedjs-lancedb",
-    "version": "0.1.30",
+    "version": "0.1.33",
     "description": "Add LanceDb support to embedjs",
     "dependencies": {
-        "@cherrystudio/embedjs-interfaces": "0.1.30",
+        "@cherrystudio/embedjs-interfaces": "0.1.33",
         "@lancedb/lancedb": "^0.14.1",
         "compute-cosine-similarity": "^1.1.0",
         "debug": "^4.4.0"

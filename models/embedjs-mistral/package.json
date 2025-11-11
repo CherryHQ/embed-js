@@ -1,9 +1,9 @@
 {
     "name": "@cherrystudio/embedjs-mistral",
-    "version": "0.1.30",
+    "version": "0.1.33",
     "description": "Enable usage of Mistral models with embedjs",
     "dependencies": {
-        "@cherrystudio/embedjs-interfaces": "0.1.30",
+        "@cherrystudio/embedjs-interfaces": "0.1.33",
         "@langchain/core": "^0.3.26",
         "@langchain/mistralai": "^0.2.0",
         "debug": "^4.4.0"

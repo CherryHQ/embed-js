@@ -1,9 +1,9 @@
 {
     "name": "@cherrystudio/embedjs-pinecone",
-    "version": "0.1.30",
+    "version": "0.1.33",
     "description": "Add Pinecone support to embedjs",
     "dependencies": {
-        "@cherrystudio/embedjs-interfaces": "0.1.30",
+        "@cherrystudio/embedjs-interfaces": "0.1.33",
         "@pinecone-database/pinecone": "^4.0.0",
         "debug": "^4.4.0"
     },

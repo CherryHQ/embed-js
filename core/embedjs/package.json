@@ -1,11 +1,11 @@
 {
     "type": "module",
     "name": "@cherrystudio/embedjs",
-    "version": "0.1.30",
+    "version": "0.1.33",
     "description": "A NodeJS RAG framework to easily work with LLMs and custom datasets",
     "dependencies": {
-        "@cherrystudio/embedjs-interfaces": "0.1.30",
-        "@cherrystudio/embedjs-utils": "0.1.30",
+        "@cherrystudio/embedjs-interfaces": "0.1.33",
+        "@cherrystudio/embedjs-utils": "0.1.33",
         "@langchain/textsplitters": "^0.1.0",
         "debug": "^4.4.0",
         "langchain": "^0.3.8",

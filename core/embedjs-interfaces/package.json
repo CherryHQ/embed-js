@@ -1,6 +1,6 @@
 {
     "name": "@cherrystudio/embedjs-interfaces",
-    "version": "0.1.30",
+    "version": "0.1.33",
     "description": "Interfaces for extending the embedjs ecosystem",
     "dependencies": {
         "@langchain/core": "^0.3.26",

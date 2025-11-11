@@ -1,10 +1,10 @@
 {
     "name": "@cherrystudio/embedjs-loader-csv",
-    "version": "0.1.30",
+    "version": "0.1.33",
     "description": "CSV loader for embedjs",
     "dependencies": {
-        "@cherrystudio/embedjs-interfaces": "0.1.30",
-        "@cherrystudio/embedjs-utils": "0.1.30",
+        "@cherrystudio/embedjs-interfaces": "0.1.33",
+        "@cherrystudio/embedjs-utils": "0.1.33",
         "csv-parse": "^5.6.0",
         "debug": "^4.4.0",
         "md5": "^2.3.0"

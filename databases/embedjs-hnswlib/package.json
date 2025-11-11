@@ -1,9 +1,9 @@
 {
     "name": "@cherrystudio/embedjs-hnswlib",
-    "version": "0.1.30",
+    "version": "0.1.33",
     "description": "Add HNSWLib support to embedjs",
     "dependencies": {
-        "@cherrystudio/embedjs-interfaces": "0.1.30",
+        "@cherrystudio/embedjs-interfaces": "0.1.33",
         "debug": "^4.4.0",
         "hnswlib-node": "^3.0.0"
     },
