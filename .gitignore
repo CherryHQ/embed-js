@@ -16,6 +16,13 @@ node_modules
 *.launch
 .settings/
 *.sublime-workspace
+.aider*
+.cursorrules
+.cursor/*
+.claude/*
+.gemini/*
+.trae/*
+.claude-code-router/*
 
 # IDE - VSCode
 .vscode/*

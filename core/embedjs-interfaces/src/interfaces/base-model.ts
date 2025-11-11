@@ -70,7 +70,7 @@ export abstract class BaseModel {
                 else return new HumanMessage({ content: c.content });
             }),
         );
-        messages.push(new HumanMessage(`${userQuery}?`));
+        messages.push(new HumanMessage(userQuery));
         return messages;
     }
 
@@ -105,7 +105,7 @@ export abstract class BaseModel {
             conversation = { conversationId: 'default', entries: [] };
         }
 
-        const messages = await this.prepare(system, userQuery, supportingContext, conversation.entries.slice(0, -1));
+        const messages = await this.prepare(system, userQuery, supportingContext, conversation.entries);
         const uniqueSources = this.extractUniqueSources(supportingContext);
         const timestamp = new Date();
         const id = uuidv4();
