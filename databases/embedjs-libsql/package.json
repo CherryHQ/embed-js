@@ -5,7 +5,7 @@
     "dependencies": {
         "@cherrystudio/embedjs-interfaces": "0.1.33",
         "@cherrystudio/embedjs-utils": "0.1.33",
-        "@libsql/client": "^0.14.0",
+        "@libsql/client": "^0.15.15",
         "debug": "^4.4.0"
     },
     "type": "module",
