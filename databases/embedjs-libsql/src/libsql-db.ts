@@ -17,12 +17,13 @@ export class LibSqlDb implements BaseVectorDatabase {
     }
 
     async init({ dimensions }: { dimensions: number }) {
+        const vectorColumnType = dimensions ? `F32_BLOB(${dimensions})` : 'F32_BLOB';
         await this.client.execute(`CREATE TABLE IF NOT EXISTS ${this.tableName} (
             id              TEXT PRIMARY KEY,
             pageContent     TEXT UNIQUE,
             uniqueLoaderId  TEXT NOT NULL,
             source          TEXT NOT NULL,
-            vector          F32_BLOB(${dimensions}),
+            vector          ${vectorColumnType},
             metadata        TEXT
         );`);
     }
