@@ -2,9 +2,9 @@ import md5 from 'md5';
 import createDebugMessages from 'debug';
 import { EventEmitter } from 'node:events';
 
-import { BaseStore } from './base-store.js';
-import { LoaderChunk, UnfilteredLoaderChunk } from '../types.js';
-import { BaseModel } from './base-model.js';
+import type { BaseStore } from './base-store.js';
+import type { LoaderChunk, UnfilteredLoaderChunk } from '../types.js';
+import type { BaseModel } from './base-model.js';
 
 export abstract class BaseLoader<
     MetadataTemplate extends Record<string, string | number | boolean | string[]> = Record<string, string | number | boolean| string[]>,

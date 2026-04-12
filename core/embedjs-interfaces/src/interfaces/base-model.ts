@@ -2,8 +2,8 @@ import { HumanMessage, AIMessage, SystemMessage } from '@langchain/core/messages
 import createDebugMessages from 'debug';
 import { v4 as uuidv4 } from 'uuid';
 
-import { Chunk, QueryResponse, Message, SourceDetail, ModelResponse, Conversation } from '../types.js';
-import { BaseStore } from './base-store.js';
+import type { Chunk, QueryResponse, Message, SourceDetail, ModelResponse, Conversation } from '../types.js';
+import type { BaseStore } from './base-store.js';
 
 export abstract class BaseModel {
     private readonly baseDebug = createDebugMessages('embedjs:model:BaseModel');
