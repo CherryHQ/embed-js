@@ -1,5 +1,9 @@
 import { BaseEmbeddings } from '@cherrystudio/embedjs-interfaces';
 
+type OllamaRequestError = Error & {
+    status?: number;
+};
+
 type OllamaEmbeddingsOptions = {
     model: string;
     baseUrl: string;
@@ -21,7 +25,7 @@ export class OllamaEmbeddings extends BaseEmbeddings {
     private readonly dimensions?: number;
     private resolvedDimensions?: number;
     private readonly keepAlive?: string | number;
-    private readonly truncate: boolean;
+    private readonly truncate?: boolean;
     private readonly requestOptions?: Record<string, unknown>;
     private readonly headers?: Record<string, string>;
 
@@ -32,7 +36,7 @@ export class OllamaEmbeddings extends BaseEmbeddings {
         this.baseUrl = options.baseUrl;
         this.dimensions = options.dimensions;
         this.keepAlive = options.keepAlive;
-        this.truncate = options.truncate ?? false;
+        this.truncate = options.truncate;
         this.requestOptions = options.requestOptions;
         this.headers = options.headers;
     }
@@ -83,6 +87,10 @@ export class OllamaEmbeddings extends BaseEmbeddings {
 
             return this.normalizeEmbeddings(response);
         } catch (currentApiError) {
+            if (!this.shouldFallbackToLegacyApi(currentApiError)) {
+                throw currentApiError;
+            }
+
             try {
                 return await Promise.all(texts.map((text) => this.embedWithLegacyApi(text)));
             } catch (legacyApiError) {
@@ -124,7 +132,9 @@ export class OllamaEmbeddings extends BaseEmbeddings {
 
         if (!response.ok) {
             const message = await response.text();
-            throw new Error(message || `Ollama request failed with status ${response.status}`);
+            const error = new Error(message || `Ollama request failed with status ${response.status}`) as OllamaRequestError;
+            error.status = response.status;
+            throw error;
         }
 
         return (await response.json()) as OllamaEmbeddingsResponse;
@@ -150,5 +160,18 @@ export class OllamaEmbeddings extends BaseEmbeddings {
 
     private isEmbeddingVector(value: unknown): value is number[] {
         return Array.isArray(value) && value.every((item) => typeof item === 'number');
+    }
+
+    private shouldFallbackToLegacyApi(error: unknown): boolean {
+        if (this.dimensions !== undefined || this.truncate !== undefined) {
+            return false;
+        }
+
+        if (!(error instanceof Error)) {
+            return false;
+        }
+
+        const status = (error as OllamaRequestError).status;
+        return status === 404 || status === 405;
     }
 }

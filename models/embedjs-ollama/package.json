@@ -36,5 +36,8 @@
     "repository": {
         "type": "git",
         "url": "git+https://github.com/CherryHQ/embed-js.git"
+    },
+    "devDependencies": {
+        "tsx": "^4.21.0"
     }
 }
