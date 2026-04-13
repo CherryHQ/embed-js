@@ -1,4 +1,4 @@
-import { Conversation, LoaderListEntry, Message } from '../types.js';
+import type { Conversation, LoaderListEntry, Message } from '../types.js';
 
 export interface BaseStore {
     init(): Promise<void>;

@@ -1,4 +1,4 @@
-import { ExtractChunkData, InsertChunkData } from '../types.js';
+import type { ExtractChunkData, InsertChunkData } from '../types.js';
 
 export interface BaseVectorDatabase {
     init({ dimensions }: { dimensions: number }): Promise<void>;

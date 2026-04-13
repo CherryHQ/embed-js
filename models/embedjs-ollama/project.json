@@ -24,6 +24,13 @@
                 "main": "models/embedjs-ollama/src/index.ts",
                 "tsConfig": "models/embedjs-ollama/tsconfig.cjs.json"
             }
+        },
+        "test": {
+            "executor": "nx:run-commands",
+            "options": {
+                "cwd": "models/embedjs-ollama",
+                "command": "npx tsx --test src/ollama-embeddings.test.ts"
+            }
         }
     }
 }
