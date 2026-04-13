@@ -14,18 +14,13 @@ jobs:
     build:
         runs-on: ubuntu-latest
 
-        strategy:
-            matrix:
-                node-version: [20.x, 22.x]
-
         steps:
             - name: Checkout repository
               uses: actions/checkout@v4
-            - name: Use Node.js ${{ matrix.node-version }}
-              uses: actions/setup-node@v3
+            - name: Use Node.js 24.x
+              uses: actions/setup-node@v4
               with:
-                  node-version: ${{ matrix.node-version }}
-                  cache: 'npm'
+                  node-version: 24
             - name: Install dependencies
               run: npm ci
             - name: Test build

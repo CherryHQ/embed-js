@@ -1,9 +1,9 @@
 {
     "name": "@cherrystudio/embedjs-astradb",
-    "version": "0.1.34",
+    "version": "0.1.35",
     "description": "Add AstraDB support to embedjs",
     "dependencies": {
-        "@cherrystudio/embedjs-interfaces": "0.1.34",
+        "@cherrystudio/embedjs-interfaces": "0.1.35",
         "@datastax/astra-db-ts": "^1.5.0",
         "debug": "^4.4.0"
     },

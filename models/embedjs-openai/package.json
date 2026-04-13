@@ -1,9 +1,9 @@
 {
     "name": "@cherrystudio/embedjs-openai",
-    "version": "0.1.34",
+    "version": "0.1.35",
     "description": "Enable usage of OpenAI models with embedjs",
     "dependencies": {
-        "@cherrystudio/embedjs-interfaces": "0.1.34",
+        "@cherrystudio/embedjs-interfaces": "0.1.35",
         "@langchain/core": "^0.3.26",
         "@langchain/openai": "^0.3.16",
         "debug": "^4.4.0"

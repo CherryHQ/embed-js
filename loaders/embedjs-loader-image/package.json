@@ -1,10 +1,10 @@
 {
     "name": "@cherrystudio/embedjs-loader-image",
-    "version": "0.1.34",
+    "version": "0.1.35",
     "description": "Load images into embedjs",
     "dependencies": {
-        "@cherrystudio/embedjs-interfaces": "0.1.34",
-        "@cherrystudio/embedjs-utils": "0.1.34",
+        "@cherrystudio/embedjs-interfaces": "0.1.35",
+        "@cherrystudio/embedjs-utils": "0.1.35",
         "@langchain/core": "^0.3.26",
         "debug": "^4.4.0",
         "exifremove": "^1.0.1",
